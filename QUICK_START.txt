@@ -1,0 +1,186 @@
+╔══════════════════════════════════════════════════════════════╗
+║          FileGlance App - QUICK START GUIDE                  ║
+║                                                              ║
+║  🚀 GET YOUR APK IN 5 MINUTES - NO GITHUB NEEDED! 🚀        ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 METHOD 1: REPLIT (EASIEST - RECOMMENDED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://replit.com
+2. Sign up (FREE)
+3. Click "Create Repl" → Choose "Python"
+4. Upload this entire ZIP folder
+5. In the Shell (bottom), type:
+   
+   pip install buildozer cython
+   buildozer android debug
+
+6. Wait 15-30 minutes (building APK)
+7. Go to "Files" → "bin" folder
+8. Right-click "fileglance-1.0-debug.apk" → Download
+9. Transfer to Android phone and install!
+
+✅ Direct download link
+✅ No expiration
+✅ 100% FREE
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💻 METHOD 2: GOOGLE COLAB (NO ACCOUNT, FAST)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://colab.research.google.com
+2. Create new notebook
+3. Copy-paste this code in a cell:
+
+!pip install buildozer cython
+from google.colab import files
+uploaded = files.upload()  # Upload the ZIP here
+!unzip fileglance_project.zip -d /content/
+%cd /content/fileglance_app
+!buildozer android debug
+files.download('/content/fileglance_app/bin/fileglance-1.0-debug.apk')
+
+4. Run the cell
+5. Upload the ZIP when prompted
+6. Wait for build
+7. APK downloads automatically!
+
+✅ No sign-up needed
+✅ Fast builds
+✅ Auto-download
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 METHOD 3: APP CENTER (PROFESSIONAL HOSTING)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+First, build APK using Method 1 or 2, then:
+
+1. Go to: https://appcenter.ms
+2. Sign up (FREE)
+3. Create new app → Android
+4. Go to "Distribute" → "Groups"
+5. Upload your APK file
+6. Click "Distribute"
+7. Copy the download link
+8. Share the link - it never expires!
+
+✅ Permanent link
+✅ Professional
+✅ Analytics included
+✅ No storage limits
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 METHOD 4: BUILD ON YOUR LINUX/MAC COMPUTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Terminal commands:
+
+# Install dependencies
+sudo apt install python3-pip git
+pip install buildozer cython
+
+# Extract and build
+unzip fileglance_project.zip
+cd fileglance_app
+buildozer android debug
+
+# Your APK is ready!
+ls bin/*.apk
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 METHOD 5: BUILD ON ANDROID (TERMUX)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Install Termux from: https://f-droid.org
+2. In Termux, run:
+
+pkg update && pkg upgrade
+pkg install python git
+pip install buildozer cython
+cd storage/downloads
+unzip fileglance_project.zip
+cd fileglance_app
+buildozer android debug
+
+3. Install APK from bin/ folder directly!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚡ WHAT YOU GET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Full storage file access
+✅ Separate views for Images/Videos/PDFs/PPTs
+✅ AutoGlance face-tracking rotation
+✅ Smooth transitions
+✅ Multi-face detection alert
+✅ Clean, minimal design
+✅ Touch effects
+✅ Professional file handling
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏱️ BUILD TIME ESTIMATES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Replit:      15-30 minutes (first time)
+Colab:       10-20 minutes
+Local PC:    20-40 minutes
+Termux:      30-60 minutes (on phone)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 RECOMMENDED FOR YOU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ BEST CHOICE: Replit + App Center
+   1. Build on Replit (get APK)
+   2. Upload to App Center (get permanent link)
+   3. Share link forever!
+
+⭐ FASTEST: Google Colab
+   - No account needed
+   - Builds in 10-20 minutes
+   - Auto-downloads APK
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❓ TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Build fails?
+→ Run: buildozer android clean
+→ Then: buildozer android debug
+
+Out of memory?
+→ Use Colab (has more RAM)
+
+App won't install?
+→ Enable "Install from unknown sources" in Android Settings
+
+App crashes?
+→ Grant all permissions in Settings → Apps → FileGlance
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📞 SUPPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Replit: https://replit.com/support
+Colab: research.google.com/colaboratory/faq.html
+App Center: docs.microsoft.com/appcenter/
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 START BUILDING NOW! Choose any method above and get your
+   APK in minutes! All methods are 100% FREE! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

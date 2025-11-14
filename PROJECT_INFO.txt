@@ -1,0 +1,268 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║                      FILEGLANCE ANDROID APP                      ║
+║                   Complete Project Package                       ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+📱 PROJECT OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Name:           FileGlance
+Version:        1.0
+Language:       Python
+Framework:      Kivy (Android)
+Package:        com.fileglance.app
+Min Android:    5.0 (API 21)
+Target Android: 12 (API 31)
+
+
+🎯 KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Full Mobile Storage Access
+   - Requests MANAGE_EXTERNAL_STORAGE permission on launch
+   - Scans entire device storage
+   - Compatible with Android 5.0 - 12+
+
+✅ File Type Filtering
+   - Images: JPG, JPEG, PNG, GIF, BMP, WEBP
+   - Videos: MP4, AVI, MKV, MOV, 3GP, FLV
+   - PDFs: PDF files
+   - Presentations: PPT, PPTX
+
+✅ Separate Category Views
+   - Dedicated screens for each file type
+   - Grid layout with file cards
+   - Visual icons for each category
+   - Smooth scrolling (limited to 200 files/category)
+
+✅ Universal File Opening
+   - Opens files using native Android apps
+   - Supports all mentioned file types
+   - Uses Android Intent system
+
+✅ AutoGlance Feature
+   - ON/OFF toggle button
+   - Real-time face detection via front camera
+   - Rotation angles: -90°, -45°, 0°, 45°, 90°
+   - Smooth 0.3s transitions
+   - Multiple face detection with bubble notification
+
+✅ Professional Design
+   - Minimal color scheme (grays, blues)
+   - Formal layout
+   - Touch effects on interactions
+   - Clean, modern UI
+
+
+🔐 PERMISSIONS REQUIRED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• CAMERA - For face detection (AutoGlance)
+• READ_EXTERNAL_STORAGE - Read files
+• WRITE_EXTERNAL_STORAGE - File operations
+• MANAGE_EXTERNAL_STORAGE - Full storage access (Android 11+)
+• INTERNET - For updates (optional)
+
+
+📦 FILES INCLUDED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+main.py              - Main application code (500+ lines)
+buildozer.spec       - Android build configuration
+requirements.txt     - Python dependencies
+AndroidManifest.xml  - Android permissions & config
+setup.sh             - Automated build script (Linux/Mac)
+README.md            - Comprehensive documentation
+QUICK_START.txt      - Fast deployment guide
+FREE_PLATFORMS.md    - List of free hosting platforms
+PROJECT_INFO.txt     - This file
+
+
+🛠️ TECHNICAL STACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Language:       Python 3.8+
+UI Framework:   Kivy 2.2.1
+Face Detection: OpenCV 4.8.1
+Build Tool:     Buildozer 1.5.0
+Architecture:   arm64-v8a, armeabi-v7a
+Dependencies:   numpy, Pillow, Cython
+
+
+🚀 DEPLOYMENT OPTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ RECOMMENDED:
+   1. Replit (https://replit.com) - Build & download APK
+   2. App Center (https://appcenter.ms) - Host & get permanent link
+
+🏃 FASTEST:
+   - Google Colab (https://colab.research.google.com)
+   - No account needed
+   - 10-20 minute builds
+
+💻 LOCAL BUILD:
+   - Linux/Mac/WSL
+   - Run: ./setup.sh
+   - Or manual: buildozer android debug
+
+📱 ON-DEVICE:
+   - Termux app (from F-Droid)
+   - Build directly on Android
+
+
+📋 QUICK BUILD STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# On Replit or Linux:
+1. Upload project files
+2. pip install buildozer cython
+3. buildozer android debug
+4. APK in bin/ folder
+
+# On Google Colab:
+1. Upload ZIP to Colab
+2. Extract and build
+3. Auto-downloads APK
+
+
+🎨 DESIGN SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Color Palette:
+  - Background: RGB(250, 250, 250)
+  - Cards: RGB(242, 242, 242)
+  - Primary: RGB(77, 128, 179) - Blue
+  - Success: RGB(51, 179, 77) - Green
+  - Text: RGB(51, 51, 51) - Dark Gray
+
+Typography:
+  - Headers: 28sp, Bold
+  - Subheaders: 22sp, Bold
+  - Body: 18sp, Regular
+  - Labels: 12sp, Regular
+
+Layout:
+  - Grid: 2 columns for file cards
+  - Spacing: 10-15dp
+  - Padding: 10-20dp
+  - Card height: 120dp
+  - Rounded corners: 10dp radius
+
+Animations:
+  - Rotation: 0.3s cubic ease
+  - Button press: 0.1s scale
+  - Transitions: Smooth
+
+
+🤖 AUTOGLANCE LOGIC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Face Position → Rotation Angle:
+  - Far Left (offset < -100px) → -90°
+  - Left (offset < -50px) → -45°
+  - Center (±50px) → 0°
+  - Right (offset > 50px) → 45°
+  - Far Right (offset > 100px) → 90°
+
+Detection:
+  - Front camera running in background thread
+  - Haar Cascade face detection
+  - 100ms processing interval
+  - Smooth cubic transitions
+
+Multi-face:
+  - Detects 2+ faces
+  - Shows popup: "More faces detected, please turn off the toggle"
+  - Auto-dismisses after 2 seconds
+
+
+⚠️ IMPORTANT NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. First Build:
+   - Takes 20-40 minutes (downloads Android SDK/NDK)
+   - Subsequent builds: 5-10 minutes
+
+2. Android 11+:
+   - Users must manually grant "All files access" in Settings
+   - App provides intent to Settings page
+
+3. Performance:
+   - File scanning limited to 200 files per category
+   - Prevents UI lag on large storages
+
+4. File Opening:
+   - Uses default Android apps for each file type
+   - If no app installed, Android shows "No app found"
+
+5. Camera:
+   - AutoGlance needs front camera access
+   - Works best in good lighting
+   - Uses Haar Cascade (CPU-based, no GPU needed)
+
+
+🐛 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Build Fails?
+  → Run: buildozer android clean
+  → Then: buildozer android debug
+
+App Crashes?
+  → Check all permissions granted
+  → View logs: adb logcat | grep python
+
+No Files Showing?
+  → Grant storage permission
+  → Check files in accessible locations
+  → Android 11+: Enable "All files access"
+
+AutoGlance Not Working?
+  → Grant camera permission
+  → Ensure good lighting
+  → Check front camera is available
+
+Multiple Face Warning?
+  → Ensure only one face in view
+  → Or turn off AutoGlance toggle
+
+
+📞 SUPPORT RESOURCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Kivy Documentation:   https://kivy.org/doc/stable/
+Buildozer Guide:      https://buildozer.readthedocs.io/
+OpenCV Docs:          https://docs.opencv.org/
+Replit Support:       https://replit.com/support
+App Center Docs:      https://docs.microsoft.com/appcenter/
+
+
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Use Replit for building (easiest interface)
+2. Host final APK on App Center (professional links)
+3. Test on real device, not emulator (camera needed)
+4. Grant all permissions on first launch
+5. For Android 11+, manually enable "All files access"
+
+
+📄 LICENSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This project is provided as-is for personal use.
+Modify and distribute as needed.
+
+
+═══════════════════════════════════════════════════════════════════
+
+         🎉 READY TO BUILD YOUR APP! 🎉
+
+    Choose your platform from QUICK_START.txt
+    and get your APK in minutes!
+
+═══════════════════════════════════════════════════════════════════
