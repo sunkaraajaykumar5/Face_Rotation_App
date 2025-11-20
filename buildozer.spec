@@ -18,7 +18,7 @@ source.include_exts = py,png,jpg,kv,atlas
 # Application versioning
 version = 1.0
 
-# Application requirements
+# Requirements
 requirements = python3,kivy,opencv-python,numpy,android,jnius,pillow
 
 # Supported orientations
@@ -27,37 +27,32 @@ orientation = portrait
 # Android permissions
 android.permissions = CAMERA,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE,MANAGE_EXTERNAL_STORAGE
 
-# Android API level
+# Android API levels
 android.api = 31
 android.minapi = 21
 android.ndk = 25b
 android.sdk = 31
 
-# Android architecture
+# Architectures
 android.archs = arm64-v8a,armeabi-v7a
 
-# Application icon (if you have one)
-#icon.filename = %(source.dir)s/icon.png
+# Icon / presplash (optional)
+# icon.filename = %(source.dir)s/icon.png
+# presplash.filename = %(source.dir)s/presplash.png
 
-# Presplash (if you have one)
-#presplash.filename = %(source.dir)s/presplash.png
-
-# Android services
-#services = 
-
-# Add Java classes
+# Add Java classes (empty)
 android.add_src = 
 
-# Android gradle dependencies
+# Gradle dependencies
 android.gradle_dependencies = androidx.documentfile:documentfile:1.0.1
 
-# Android meta-data
+# Meta-data
 android.meta_data = 
 
 # Entrypoint
 android.entrypoint = org.kivy.android.PythonActivity
 
-# Android app theme
+# Android theme
 android.apptheme = "@android:style/Theme.NoTitleBar"
 
 # Enable AndroidX
@@ -69,16 +64,18 @@ android.logcat_filters = *:S python:D
 # Copy libraries
 android.copy_libs = 1
 
+
 [buildozer]
 
 # Log level
 log_level = 2
 
-# Display warning if buildozer is run as root
+# Warning for running as root
 warn_on_root = 1
 
-# Build directory
+# Build dir
 build_dir = ./.buildozer
 
-# Binary directory
+# Binary dir
 bin_dir = ./bin
+
